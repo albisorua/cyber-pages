@@ -14,8 +14,8 @@ header {
 }
 
 .logo {
-    max-width: 90vw; /* Scale with viewport width */
-    max-height: 90vh; /* Scale with viewport height */
+    max-width: 100vw; /* Scale with viewport width */
+    max-height: 100vh; /* Scale with viewport height */
     width: auto;
     height: auto;
     object-fit: contain;
@@ -53,6 +53,8 @@ article {
 
 article img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
