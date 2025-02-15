@@ -5,27 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>r4c00nz Security Blog</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+    <script>
+        function loadMarkdown(article, mdFile) {
+            fetch(mdFile)
+                .then(response => response.text())
+                .then(text => {
+                    let converter = new showdown.Converter();
+                    document.getElementById(article).innerHTML = converter.makeHtml(text);
+                })
+                .catch(error => console.error('Error loading Markdown:', error));
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1>Welcome to r4c00nz Security Blog</h1>
+        <img src="images/root/Racoon.png" alt="r4c00nz Logo" class="logo">
+        <h1>r4c00nz Security Blog</h1>
+        <p>Exploring cybersecurity, ethical hacking, and digital defense strategies.</p>
     </header>
     <main>
-        <article>
-            <h2>The Majestic Raccoon</h2>
-            <img src="images/Racoon.png" alt="Regal raccoon portrait">
-            <p>
-                Behold the noble raccoon, draped in royal garments, embodying a regal presence that commands respect. 
-                This artwork portrays the majestic essence of our furry monarch, sitting upon a golden throne. 
-                A perfect blend of nature and aristocracy, this image reminds us that true royalty knows no species.
-            </p>
-            <p>
-                Follow along for more security insights, ethical hacking tips, and digital defense strategies!
-            </p>
-        </article>
+        <section class="articles">
+            <article>
+                <img src="images/subatomic/logo.png" alt="Sherlock - Subatomic">
+                <h2>HackTheBox – Keeper</h2>
+                <div id="keeper-content">Loading...</div>
+                <script>loadMarkdown('keeper-content', 'articles/subatomic.md');</script>
+            </article>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 r4c00nz Security Blog</p>
+        <p>&copy; 2025 r4c00nz Security Blog | Stay secure, stay informed.</p>
     </footer>
 </body>
 </html>
