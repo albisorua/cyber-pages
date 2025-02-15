@@ -14,11 +14,11 @@ header {
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+    max-width: 90vw; /* Scale with viewport width */
+    max-height: 90vh; /* Scale with viewport height */
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 h1 {
