@@ -5,16 +5,23 @@ W1ll h4ck f0r 4 c00k13.🍪🦆
 
 ## Articles
 
-### HackTheBox – Subatomic
+### Fetch The Flag 2025
 
 <div style="text-align: center;">
-    <img src="images/subatomic/logo.png" alt="Sherlock" style="max-width: 100%; height: auto;">
+    <img src="images/FetchTheFlag2025/logo.png" alt="FetchTheFlag2025" style="max-width: 25%; height: auto;">
 </div>
 
 **About:**  
-Subatomic is a medium difficulty Sherlock where you are tasked with analysing an electron focused malware sample on behalf of the Forela organisation due to the compromise of a Discord account. You will be tasked with answering questions directly relevant to the analysis of a sample currently found in the wild. Warning: This is a warning that this Sherlock includes software that is going to interact with your computer and files. This software has been intentionally included for educational purposes and is NOT intended to be executed or used otherwise. Always handle such files in isolated, controlled, and secure environments. One the Sherlock zip has been unzipped, you will find a DANGER.txt file. Please read this to proceed.
+[Here](articles/FetchTheFlag2025.md) you can find the writeup from the fetch the flag competition organized by snyk in collaboration with John Hammond.
 
+### oBfsC4t10n2 - HTB - Forensics
 
+<div style="text-align: center;">
+    <img src="images/oBfsC4t10n2/challenge.png" alt="oBfsC4t10n2" style="max-width: 25%; height: auto;">
+</div>
+
+**About:**  
+Hard forensics [challenge](articles/oBfsC4t10n2.md) from hack the box covering Macros embedded in Excel docs.
 
 ---
 
